@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="box" id="doc"></div>
+<script>
+const d = JSON.parse(localStorage.getItem("ultimo"));
+document.getElementById("doc").innerHTML = `
+<h2>Documento Registrado</h2>
+<p><b>${d.descricao}</b></p>
+<p>Data: ${d.data}</p>
+<p>Código: ${d.publico}</p>
+`;
+</script>
+</body>
+</html>
